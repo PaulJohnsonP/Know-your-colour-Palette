@@ -467,7 +467,12 @@
                     colors.push(el.textContent);
                 });
                 
-                const paletteText = My aesthetic is "${aestheticName.textContent}"!\n\nColor Palette:\n${colors.join('\n')}\n\n${aestheticDesc.textContent};
+             const paletteText = `My aesthetic is "${aestheticName.textContent}"!
+
+                Color Palette:
+                ${colors.join('\n')}
+                
+                ${aestheticDesc.textContent}`;
                 
                 navigator.clipboard.writeText(paletteText)
                     .then(() => {
